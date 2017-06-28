@@ -1,0 +1,102 @@
+	
+	html {
+		background-color: tomato;
+		font-family: 'helvetica neue';
+		text-align: center;
+		font-size: 10px;
+	}
+
+	header {
+		width: 100%;
+	}
+
+	h1 {
+		color: #FFF;
+		text-shadow: 1px 1px 0px black,
+					 -1px -1px 0px black,
+					 2px 2px 1px black;
+	} 
+	
+	body {
+		font-size: 2rem;
+		display: flex;
+		flex: 1;
+		min-height: 100vh;
+		align-items: center;
+		flex-direction: column;
+	}
+	
+	.clock {
+		width: 30rem;
+		height: 30rem;
+		border: 10px solid #000;
+		border-radius: 50%;
+		margin: 50px auto;
+		position: relative;
+		padding: 2rem;
+		box-shadow: 0 0 0px 4px rgba(255,255, 255,1);
+		
+			
+		background: ;
+	}
+	
+
+	
+	
+	.clock-face {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		transform: translateY(-3px);
+	}
+	
+	
+	.hand {
+		width: 50%;
+		height: 6px;
+		background: white;
+		position: absolute;
+		top: 50%;
+		border: 1.2px solid black;
+		transform-origin: 100%;
+		transform: rotate(90deg);
+		transition: all 0.05s;
+		transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);
+		
+	}
+	
+	.center-button {
+		width: 20px;
+		height: 20px;
+		background-color: #eee;
+		position: absolute;
+		top: 48%;
+		left: 14rem;
+		
+		border-radius: 50%;
+		z-index: 100;
+		border: 1.4px solid black;
+	}
+	
+	.second-hand {
+		height: 4px;
+	}
+	
+	.hour-hand {
+		width: 35%;
+		margin-left: 42px
+	}
+
+	#time {
+		
+		width: 100%;
+		height: 30px;
+		margin: auto;
+		font-size: 2em;
+		font-weight: 700;
+		color: #fff;
+		text-shadow: 2px 2px 0px black;
+		-webkit-text-stroke: 2px black;
+		cursor: pointer;
+		margin-top: -0.5em;
+	}
